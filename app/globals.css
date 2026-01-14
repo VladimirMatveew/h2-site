@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Фикс “прыжков” из-за исчезающего скроллбара */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll; /* всегда держим вертикальный скролл */
+  background: #000;
+  color: #fff;
+}
+
+/* Мелочь для аккуратности */
+* {
+  box-sizing: border-box;
+}
