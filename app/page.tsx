@@ -695,36 +695,6 @@ export default function HomePage() {
           </motion.div>
 
           {/* FORM — centered laconic */}
-          <motion.div
-            id="calc"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.42 }}
-            className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-7 md:p-8 scroll-mt-24"
-          >
-            <div className="mx-auto max-w-xl text-center">
-              <p className="mt-2 text-sm text-white/70">
-                Оставьте номер — мы свяжемся и всё рассчитаем
-              </p>
-
-              <form
-                className="mt-5 grid gap-3"
-                onSubmit={(e) => e.preventDefault()}
-              >
-                <input
-                  placeholder="Телефон"
-                  className="h-11 w-full rounded-2xl border border-white/10 bg-black/40 px-4 text-center outline-none focus:border-[#FD7900]"
-                />
-                <button className="h-11 w-full rounded-2xl bg-[#FD7900] font-semibold text-black transition hover:bg-[#FA7800]">
-                  Отправить заявку
-                </button>
-                <div className="text-xs text-white/50">
-                  Нажимая кнопку, вы соглашаетесь с политикой обработки данных
-                </div>
-              </form>
-            </div>
-          </motion.div>
         </div>
       </section>
 
