@@ -423,29 +423,7 @@ export default function MasloPage() {
       </Section>
 
       {/* CONTACTS */}
-      <Section
-        id="contacts"
-        title="Контакты по маслам"
-        desc="Контакты для запросов по ассортименту, фасовке и сотрудничеству."
-      >
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-          <div className="text-white/80">Сайт: x-element.online</div>
-          <div className="mt-2 text-white/80">Телефон: +7 (922) 02 88188</div>
-          <div className="mt-2 text-white/80">Почта: info@h2element.online</div>
-
-          <div className="mt-6 text-xs text-white/50">
-            Если хотите — заменим эти контакты на ваши (если у вас другой номер
-            и почта для заявок).
-          </div>
-
-          <a
-            href="/#calc"
-            className="mt-6 inline-block rounded-2xl bg-[#FD7900] px-5 py-3 font-semibold text-black transition hover:bg-[#FA7800]"
-          >
-            Оставить заявку на подбор
-          </a>
-        </div>
-      </Section>
+     
 
       <div className="h-10" />
     </div>
