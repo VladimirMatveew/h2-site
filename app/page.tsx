@@ -704,9 +704,6 @@ export default function HomePage() {
             className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-7 md:p-8 scroll-mt-24"
           >
             <div className="mx-auto max-w-xl text-center">
-              <div className="text-xl md:text-2xl font-semibold">
-                Подбор оборудования и расчёт экономии
-              </div>
               <p className="mt-2 text-sm text-white/70">
                 Оставьте номер — мы свяжемся и всё рассчитаем
               </p>
