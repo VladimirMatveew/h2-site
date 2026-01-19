@@ -19,12 +19,12 @@ export default function Header() {
     []
   );
 
-  // закрываем меню при смене страницы
+  // Закрываем меню при смене страницы
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  // блокируем прокрутку страницы, когда меню открыто
+  // Блокируем скролл, когда меню открыто
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
@@ -55,7 +55,7 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* NAV (DESKTOP) — как было, просто остаётся на md+ */}
+        {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-6 text-sm text-white/80">
           {nav.map((item) => (
             <Link key={item.href} href={item.href} className="hover:text-white">
@@ -66,7 +66,7 @@ export default function Header() {
 
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-2">
-          {/* BURGER (MOBILE ONLY) */}
+          {/* MOBILE BURGER */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -93,7 +93,7 @@ export default function Header() {
             </span>
           </button>
 
-          {/* CTA — как было */}
+          {/* CTA (как было) */}
           <Link
             href="/#economy"
             className="rounded-2xl bg-[#FD7900] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FA7800]"
@@ -106,13 +106,10 @@ export default function Header() {
       {/* MOBILE MENU OVERLAY */}
       {open && (
         <div className="md:hidden fixed inset-0 z-50">
-          {/* backdrop */}
           <div
             className="absolute inset-0 bg-black/70"
             onClick={() => setOpen(false)}
           />
-
-          {/* panel */}
           <div className="absolute left-0 right-0 top-0 border-b border-white/10 bg-black/90 backdrop-blur">
             <div className="mx-auto max-w-6xl px-4 py-4">
               <div className="flex items-center justify-between">

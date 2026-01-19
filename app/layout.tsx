@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/Header";
+import Header from "./Header";
 
 export const metadata: Metadata = {
   title: "H2 Element",
@@ -19,7 +19,6 @@ export default function RootLayout({
         style={{ scrollbarGutter: "stable" }}
       >
         <Header />
-
         <main>{children}</main>
 
         <footer className="border-t border-white/10 py-10 text-center text-xs text-white/50">
