@@ -761,11 +761,20 @@ export default function HomePage() {
                   rel="noreferrer"
                   className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
                 >
-                  ✈️ Telegram: @H2_element_21
+                  Telegram: @H2_element_21
+                </a>
+
+                 <a
+                  href="https://vk.ru/h2element21"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
+                >
+                  Вконтакте: https://vk.ru/h2element21
                 </a>
 
                 <div className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/60">
-                  ✉️ Почта: скоро
+                  ✉️ Почта: mayorovst62@gmail.com
                 </div>
               </div>
 
