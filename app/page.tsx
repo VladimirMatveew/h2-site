@@ -745,12 +745,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <a
-                href="#calc"
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FD7900] px-5 py-3 font-semibold text-black transition hover:bg-[#FA7800]"
-              >
-                Оставить заявку <Icon name="arrow" className="h-5 w-5" />
-              </a>
+
 
               <div className="mt-3 text-xs text-white/45">
                 Мы на связи в Telegram и по телефону.
