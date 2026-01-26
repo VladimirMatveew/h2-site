@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const RUTUBE_EMBED_URL = "https://rutube.ru/play/embed/f8d8a6039a6ae4073e17661cffcec1a5/";
+
 const faq = [
   {
     q: "Это безопасно для двигателя?",
@@ -99,43 +101,225 @@ export default function FaqPage() {
       <p className="mt-3 text-white/70 max-w-3xl">
         Ответы на частые вопросы про водородные генераторы и экономию топлива.
       </p>
+      
+      <div className="mt-8 grid gap-6">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+          <div className="aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-black/40">
+            <iframe
+              src={RUTUBE_EMBED_URL}
+              className="h-full w-full"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Видео"
+            />
+          </div>
 
-      <div className="mt-8 grid gap-3">
-        {faq.map((item) => (
-          <details
-            key={item.q}
-            className="group rounded-3xl border border-white/10 bg-white/5 p-5"
-          >
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
-              <span className="font-semibold">{item.q}</span>
-              <span className="text-[#FD7900] transition group-open:rotate-45">
-                +
-              </span>
-            </summary>
+          
 
-            <div className="mt-3 space-y-2 text-white/75">
-              {item.a.map((p, idx) => (
-                <p key={idx} className="leading-relaxed">
-                  {p}
-                </p>
-              ))}
+          <div className="mt-4 space-y-5 text-white/75">
+            <div>
+              <div className="font-semibold text-white">
+                Введение и принцип работы водородного генератора
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Технология основана на методе электролиза, который позволяет
+                  высвобождать водород из воды.
+                </li>
+                <li>
+                  При подаче напряжения на электроды происходит разделение молекул
+                  воды на водород и кислород.
+                </li>
+              </ul>
             </div>
-          </details>
-        ))}
-      </div>
 
-      <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6">
-        <div className="text-lg font-semibold">Нужна консультация?</div>
-        <p className="mt-2 text-white/70">
-          Перейдите на главную и оставьте номер — мы подберём оборудование под
-          ваш транспорт.
-        </p>
-        <Link
-          href="/#calc"
-          className="mt-4 inline-flex items-center justify-center rounded-2xl bg-[#FD7900] px-5 py-3 font-semibold text-black transition hover:bg-[#FA7800]"
-        >
-          Перейти к заявке
-        </Link>
+            <div>
+              <div className="font-semibold text-white">
+                Влияние на двигатель и экономия топлива
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Водород, попадая в камеру сгорания, увеличивает октановое число
+                  топлива и КПД.
+                </li>
+                <li>
+                  Современные автомобили используют кислородные датчики для
+                  оптимизации впрыска топлива.
+                </li>
+                <li>
+                  Экономия топлива достигает до 60% на дизельных и газовых
+                  генераторах.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Применение генераторов
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Подходят для всех типов транспорта: грузовые и легковые авто,
+                  спецтехника, сельхозтехника, водный транспорт.
+                </li>
+                <li>
+                  Установка на дизельные и газовые генераторы снижает расход
+                  топлива до 60%.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Эффективность с турбированными двигателями
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Водородные генераторы эффективно работают с турбированными
+                  двигателями, улучшая сгорание топлива.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Примеры экономии топлива
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>На грузовых машинах экономия составляет около 30%.</li>
+                <li>На легковых — до 60%.</li>
+                <li>Для китайских автомобилей — 40–45%.</li>
+                <li>
+                  Система не подходит для изношенных авто с неисправными датчиками.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Влияние на мощность и динамику
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Водород воспламеняется быстрее бензина или дизеля, увеличивая
+                  мощность двигателя.
+                </li>
+                <li>
+                  Отсутствие детонации благодаря минимальному количеству водорода.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Обслуживание и эксплуатация
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Для эксплуатации требуется около 2,8 литра воды на 10 тысяч км.
+                </li>
+                <li>
+                  Зимой для предотвращения замерзания рекомендуется добавлять
+                  изопропиловый спирт.
+                </li>
+                <li>Установка занимает 1,5–2 часа, обслуживание простое.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Безопасность и регистрация
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Система безопасна и не требует регистрации в технадзоре.
+                </li>
+                <li>
+                  Внутри генератора — дистиллированная вода, она не взрывоопасна.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">Источник электричества</div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Для работы генератора нужно около 120 Вт, питание берётся из
+                  электросети автомобиля.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                География обслуживания и производство
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Дилерская сеть позволяет обслуживаться в любом регионе.
+                </li>
+                <li>
+                  Производство в Самаре: 90% компонентов — российские, остальные —
+                  из Китая.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">
+                Преимущества и окупаемость
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Гарантия — 3 года, срок эксплуатации — до 10 лет.</li>
+                <li>Экономия топлива — до 65%, рост мощности — до 30%.</li>
+                <li>
+                  Продление ресурса двигателя/форсунок/свечей — до 300%.
+                </li>
+                <li>
+                  Снижение расхода масла — 60–100%, вредных выбросов — 50–80%.
+                </li>
+                <li>
+                  Пример окупаемости для грузового авто: экономия до 1,5 млн ₽ в
+                  год (по данным из видео).
+                </li>
+                <li>Гарантия возврата денег при отсутствии результата.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="font-semibold text-white">Миссия</div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  Сохранение мира от загрязнения воздуха и глобального потепления.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid gap-3">
+          {faq.map((item) => (
+            <details
+              key={item.q}
+              className="group rounded-3xl border border-white/10 bg-white/5 p-5"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+                <span className="font-semibold">{item.q}</span>
+                <span className="text-[#FD7900] transition group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <div className="mt-3 space-y-2 text-white/75">
+                {item.a.map((p, idx) => (
+                  <p key={idx} className="leading-relaxed">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </details>
+          ))}
+        </div>
       </div>
     </div>
   );
