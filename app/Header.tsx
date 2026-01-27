@@ -65,7 +65,7 @@ export default function Header() {
         </nav>
 
         {/* RIGHT SIDE */}
-        <div className="flex items-center gap-2">
+        <div className="ml-auto md:ml-0 flex items-center gap-2">
           {/* MOBILE BURGER */}
           <button
             type="button"
@@ -92,14 +92,6 @@ export default function Header() {
               />
             </span>
           </button>
-
-          {/* CTA (как было) */}
-          <Link
-            href="/#economy"
-            className="rounded-2xl bg-[#FD7900] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FA7800]"
-          >
-            Рассчитать экономию
-          </Link>
         </div>
       </div>
 
@@ -136,14 +128,6 @@ export default function Header() {
                   </Link>
                 ))}
               </nav>
-
-              <Link
-                href="/#economy"
-                onClick={() => setOpen(false)}
-                className="inline-flex h-11 w-full items-center justify-center rounded-2xl bg-[#FD7900] px-4 text-sm font-semibold text-black hover:bg-[#FA7800] transition"
-              >
-                Рассчитать экономию
-              </Link>
             </div>
           </div>
         </div>
