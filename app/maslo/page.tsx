@@ -116,7 +116,7 @@ function Icon({
 const gallery = [
   {
     src: "/oil/hero.jpg",
-    title: "ELEMENT — линейка масел",
+    title: "X-ELEMENT — линейка масел",
     desc: "Моторные и трансмиссионные масла. Форматы от 1L до бочек 205L.",
   },
   {
@@ -200,7 +200,7 @@ export default function MasloPage() {
             className="text-center"
           >
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-              Масла <span className="text-[#FD7900]">ELEMENT</span>
+              Масло <span className="text-[#FD7900]">X-ELEMENT</span>
             </h1>
             <p className="mt-3 text-white/70 max-w-3xl mx-auto">
               Моторные и трансмиссионные масла. Подбор под двигатель, пробег и
