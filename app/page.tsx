@@ -723,12 +723,12 @@ export default function HomePage() {
                 </a>
 
                 <a
-                  href="https://t.me/H2_element_21"
+                  href="https://t.me/H2_element_21rus"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
                 >
-                  Telegram: @H2_element_21
+                  Telegram: @H2_element_21rus
                 </a>
 
                  <a
@@ -740,12 +740,20 @@ export default function HomePage() {
                   Вконтакте: https://vk.ru/h2element21
                 </a>
 
+                   <a
+                  href="https://rutube.ru/video/person/74871036/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
+                >
+                  Мы на RuTube: H2 element
+                </a>
+
+                
                 <div className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/60">
                   ✉️ Почта: mayorovst62@gmail.com
                 </div>
               </div>
-
-
 
               <div className="mt-3 text-xs text-white/45">
                 Мы на связи в Telegram и по телефону.
