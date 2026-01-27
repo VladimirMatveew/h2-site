@@ -665,7 +665,7 @@ export default function HomePage() {
                 </div>
 
                 <a
-                  href="#contacts"
+                  href="https://t.me/H2_element_21rus"
                   className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FD7900] px-5 py-3 font-semibold text-black transition hover:bg-[#FA7800]"
                 >
                   Получить расчёт под мой транспорт{" "}
@@ -741,12 +741,12 @@ export default function HomePage() {
                 </a>
 
                 <a
-                  href="https://t.me/H2_element_21rus"
+                  href="https://t.me/H2_ELEMENTS_21"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
                 >
-                  Telegram: @H2_element_21rus
+                  Наш канал в Telegram: H2_ELEMENTS_21
                 </a>
 
                 <a
@@ -765,16 +765,6 @@ export default function HomePage() {
                   className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
                 >
                   Мы на RuTube: H2 element
-                </a>
-
-
-                 <a
-                  href="https://t.me/H2_ELEMENTS_21"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
-                >
-                  Наш канал в Telegram: H2_ELEMENTS_21
                 </a>
 
                 <div className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/60">
