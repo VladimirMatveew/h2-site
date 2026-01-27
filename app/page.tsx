@@ -712,10 +712,6 @@ export default function HomePage() {
                     allowFullScreen
                   />
                 </div>
-                <div className="mt-3 text-xs text-white/45">
-                  Если видео не запускается, проверьте блокировщики
-                  контента/iframe.
-                </div>
               </div>
 
               {/* Key points (accordion) */}
