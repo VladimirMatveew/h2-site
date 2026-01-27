@@ -171,6 +171,8 @@ const reviewVideos = [
   { src: "/videos/review-1.mp4", title: "Видео-отзыв клиента #1" },
   { src: "/videos/review-2.mp4", title: "Видео-отзыв клиента #2" },
   { src: "/videos/review-3.mp4", title: "Видео-отзыв клиента #3" },
+  { src: "/videos/review-4.mp4", title: "Видео-отзыв клиента #4" },
+  { src: "/videos/review-5.mp4", title: "Видео-отзыв клиента #5" },
 ];
 
 function VideoReviewsSlider() {
