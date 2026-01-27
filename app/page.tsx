@@ -647,7 +647,7 @@ export default function HomePage() {
                 </div>
 
                 <a
-                  href="#calc"
+                  href="#contacts"
                   className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FD7900] px-5 py-3 font-semibold text-black transition hover:bg-[#FA7800]"
                 >
                   Получить расчёт под мой транспорт{" "}
