@@ -13,6 +13,22 @@ const fadeUp = {
   }),
 };
 
+/**
+ * ВАЖНО:
+ * Было: во многих местах viewport.amount = 0.8 / 0.65 / 0.55 и т.д.
+ * Это означает, что блок становится "inView" только когда он уже почти полностью на экране.
+ * Поэтому при прокрутке вы видели "пусто" и нужно было мотнуть ниже — чтобы блок успел стать inView.
+ *
+ * Стало: общий конфиг, который срабатывает раньше:
+ * - amount: 0.15 (достаточно 15% видимости)
+ * - margin: "200px 0px 200px 0px" (триггерим заранее — когда блок ещё в ~200px от viewport)
+ */
+const EARLY_VIEWPORT = {
+  once: true,
+  amount: 0.15 as const,
+  margin: "200px 0px 200px 0px",
+};
+
 /* ============ ICONS (inline, no deps) ============ */
 function Icon({
   name,
@@ -353,7 +369,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={EARLY_VIEWPORT}
             custom={0}
             variants={fadeUp}
             className="text-center"
@@ -377,7 +393,7 @@ export default function HomePage() {
                 key={b.text}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true, amount: 0.65 }}
+                viewport={EARLY_VIEWPORT}
                 custom={i + 1}
                 variants={fadeUp}
                 className="rounded-3xl border border-white/10 bg-white/5 p-3 hover:border-white/20 transition"
@@ -396,7 +412,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={EARLY_VIEWPORT}
             custom={8}
             variants={fadeUp}
             className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-7"
@@ -431,7 +447,7 @@ export default function HomePage() {
           <motion.div
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={EARLY_VIEWPORT}
             custom={9}
             variants={fadeUp}
             className="mt-4 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-7"
@@ -466,7 +482,7 @@ export default function HomePage() {
             id="economy"
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.45 }}
+            viewport={EARLY_VIEWPORT}
             custom={10}
             variants={fadeUp}
             className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-7 scroll-mt-24"
@@ -669,7 +685,7 @@ export default function HomePage() {
             id="reviews"
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.35 }}
+            viewport={EARLY_VIEWPORT}
             custom={11}
             variants={fadeUp}
             className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-7 scroll-mt-24"
@@ -733,7 +749,7 @@ export default function HomePage() {
                   Telegram: @H2_element_21rus
                 </a>
 
-                 <a
+                <a
                   href="https://vk.ru/h2element21"
                   target="_blank"
                   rel="noreferrer"
@@ -742,7 +758,7 @@ export default function HomePage() {
                   Вконтакте: https://vk.ru/h2element21
                 </a>
 
-                   <a
+                <a
                   href="https://rutube.ru/video/person/74871036/"
                   target="_blank"
                   rel="noreferrer"
@@ -750,6 +766,7 @@ export default function HomePage() {
                 >
                   Мы на RuTube: H2 element
                 </a>
+
 
                  <a
                   href="https://t.me/H2_ELEMENTS_21"
@@ -759,7 +776,7 @@ export default function HomePage() {
                 >
                   Наш канал в Telegram: H2_ELEMENTS_21
                 </a>
-                
+
                 <div className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/60">
                   ✉️ Почта: mayorovst62@gmail.com
                 </div>
