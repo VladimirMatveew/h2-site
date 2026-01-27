@@ -355,7 +355,7 @@ export default function MasloPage() {
 
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <a
-                  href="https://t.me/H2_element_21"
+                  href="https://t.me/H2_element_21rus"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#FD7900] px-6 py-3 font-semibold text-black transition hover:bg-[#FA7800]"
@@ -367,7 +367,7 @@ export default function MasloPage() {
                   href="tel:+79933391989"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-black/30 px-6 py-3 font-semibold text-white/90 hover:border-white/25 transition"
                 >
-                  +7 993 339 1989
+                  +7 (993) 339-19-89
                 </a>
               </div>
 
