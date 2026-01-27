@@ -751,6 +751,14 @@ export default function HomePage() {
                   Мы на RuTube: H2 element
                 </a>
 
+                 <a
+                  href="https://t.me/H2_ELEMENTS_21"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
+                >
+                  Наш канал в Telegram: H2_ELEMENTS_21
+                </a>
                 
                 <div className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/60">
                   ✉️ Почта: mayorovst62@gmail.com
