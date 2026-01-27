@@ -719,7 +719,7 @@ export default function HomePage() {
                   href="tel:+79933391989"
                   className="rounded-2xl border border-white/10 bg-black/30 px-5 py-3 text-white/90 hover:border-white/20 transition"
                 >
-                  📞 +7 993 339 1989
+                  📞 +7 (993) 339-19-89
                 </a>
 
                 <a
